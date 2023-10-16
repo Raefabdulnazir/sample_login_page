@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#FF4A5C"/> <!-- Light red color -->
+    <corners android:radius="8dp"/> <!-- Rounded corners (adjust the radius as needed) -->
+    <stroke
+        android:width="2dp"
+        android:color="#FF4A5C" />
+
+</shape>
