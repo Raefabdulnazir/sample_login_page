@@ -13,9 +13,14 @@
         android:theme="@style/Theme.SampleProject"
         tools:targetApi="31">
         <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/DarkLoginTheme" />
+        <activity
             android:name=".LoginActivity"
-            android:theme="@style/DarkLoginTheme"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/DarkLoginTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

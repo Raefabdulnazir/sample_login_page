@@ -1,10 +1,12 @@
 package com.example.sampleproject
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.ToggleButton
 
 class LoginActivity : AppCompatActivity() {
@@ -22,6 +24,13 @@ class LoginActivity : AppCompatActivity() {
             else{//hide the password
                 passwordEditText.transformationMethod = PasswordTransformationMethod.getInstance()
             }
+        }
+
+        val forgotPassordTextView = findViewById<TextView>(R.id.forgotPasswordTextView)
+
+        forgotPassordTextView.setOnClickListener {
+            val intent = Intent(this,ForgotPasswordActivity::class.java)
+            startActivity(intent)
         }
     }
 }   
